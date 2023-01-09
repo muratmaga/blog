@@ -1,4 +1,4 @@
-#
+#  sdds
 cp -a publ/pages/_drafts/_draft.md publ/pages/_posts/$@.md;
 sed -i "s/_PATH/$@/g" "$(pwd -W | sed  's/\//\\/g')\publ\pages\_posts\\$@.md";
 explorer "$(pwd -W | sed  's/\//\\/g')\publ\pages\_posts\\$@.md";
